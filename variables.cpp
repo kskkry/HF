@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
-#include "systemparam.hpp"
-#include "variables.hpp"
+#include "systemparam.h"
+#include "variables.h"
 
 // string -> std::string?
 int get_Z_val(std::string name){

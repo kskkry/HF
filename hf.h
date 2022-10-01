@@ -1,6 +1,6 @@
 #pragma once
-#include "systemparam.hpp"
-#include "variables.hpp"
+#include "systemparam.h"
+#include "variables.h"
 
 class HF {
 private:

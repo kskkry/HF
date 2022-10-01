@@ -1,5 +1,5 @@
 #include <iostream>
-#include "hf.hpp"
+#include "hf.h"
 
 int main(void){
     HF *hf = new HF();

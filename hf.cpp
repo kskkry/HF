@@ -1,7 +1,7 @@
 #include <iostream>
-#include "hf.hpp"
-#include "systemparam.hpp"
-#include "variables.hpp"
+#include "hf.h"
+#include "systemparam.h"
+#include "variables.h"
 
 HF::HF(void){
     vars = new Variables();

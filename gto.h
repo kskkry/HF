@@ -1,8 +1,8 @@
 #pragma once
 #include <iostream>
 #include <cmath>
-#include "systemparam.hpp"
-#include "variables.hpp"
+#include "systemparam.h"
+#include "variables.h"
 #include "vec3.h"
 
 class GTO {
