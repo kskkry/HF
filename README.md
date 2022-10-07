@@ -10,3 +10,5 @@ g++ main.cpp hf.cpp variables.cpp systemparam.cpp gto.cpp vec3.cpp
 - 参考資料
     - 基底関数の処理
         - https://github.com/ifilot/hfcxx/tree/master
+    - 行列クラス
+        - https://qiita.com/ccam/items/75efe05edf815ea6734b
