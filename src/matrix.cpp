@@ -25,7 +25,7 @@ Matrix Matrix::operator-(Matrix x){
 
   try{
     if(A.size()!=B.size() || A[0].size()!=B[0].size())
-      throw "Invalid Matrixtrix size! in Matrix Matrix::operator-(Matrix x)";
+      throw "Invalid Matrix size! in Matrix Matrix::operator-(Matrix x)";
   }catch(const char* err){
     cout << "Error:" << err << "\n";
     exit(1);
@@ -47,7 +47,7 @@ Matrix Matrix::operator+(Matrix x){
   
   try{
     if(A.size()!=B.size() || A[0].size()!=B[0].size())
-      throw "Invalid Matrixtrix size! in Matrix Matrix::operator+(Matrix x)";
+      throw "Invalid Matrix size! in Matrix Matrix::operator+(Matrix x)";
   }catch(const char* err){
     cout << "Error:" << err << "\n";
     exit(1);
@@ -69,7 +69,7 @@ Matrix Matrix::operator*(Matrix x){
     if(A[0].size()!=B.size()){
       cout << "The number of columns in first operand:" << A[0].size() << "\n";
       cout << "The number of rows in second operand:" << B.size() << "\n";
-      throw "Invalid Matrixtrix size! in Matrix Matrix::operator*(Matrix x)";
+      throw "Invalid Matrix size! in Matrix Matrix::operator*(Matrix x)";
     }
   }catch(const char* err){
     cout << "Error:" << err << "\n";
@@ -143,7 +143,7 @@ Matrix Matrix::inv(){
   vector<vector<double>> A(vec.size(), vector<double>(vec[0].size()*2,0));
   try{
     if(vec.size()!=vec[0].size())
-      throw "Invalid Matrixtrix size. inv() can only be called by square Matrixtrix!";
+      throw "Invalid Matrix size. inv() can only be called by square Matrixtrix!";
   }catch(const char* err){
     cout << "Error:" << err << "\n";
     exit(1);
@@ -187,7 +187,7 @@ double Matrix::det(){
     return A[0][0] * A[1][1] - A[0][1] * A[1][0];
   try{
     if(vec.size()!=vec[0].size())
-      throw "Invalid Matrixtrix size. det() can only be called by square Matrixtrix!";
+      throw "Invalid Matrix size. det() can only be called by square Matrixtrix!";
   }catch(const char* err){
     cout << "Error:" << err << "\n";
     exit(1);
