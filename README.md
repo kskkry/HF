@@ -1,9 +1,9 @@
 ### complile
-- 必要ファイルを全てコンパイルする必要あり
-    - エラー分
+- 必要ファイルを全てコンパイルする必要あり（C++に詳しくない）
+    - エラー
         - collect2: error: ld returned 1 exit status
 ```bash
-g++ main.cpp hf.cpp variables.cpp systemparam.cpp gto.cpp vec3.cpp
+g++ main.cpp hf.cpp variables.cpp systemparam.cpp gto.cpp vec3.cpp matrix.cpp
 ```
 
 ### 実装
