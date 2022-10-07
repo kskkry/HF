@@ -8,9 +8,9 @@ private:
 public:
     Vec3();
     Vec3(const double xx, const double yy, const double zz);
-    const double getx();
-    const double gety();
-    const double getz();
-    const double get_radius();
+    const double getx() const;
+    const double gety() const;
+    const double getz() const;
+    const double get_radius() const;
 };
 

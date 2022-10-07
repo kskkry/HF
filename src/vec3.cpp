@@ -13,19 +13,19 @@ Vec3::Vec3(const double xx, const double yy, const double zz){
     z = zz;
 
 }
-const double Vec3::getx() {
+const double Vec3::getx() const {
     return x;
 }
 
-const double Vec3::gety() {
+const double Vec3::gety() const {
     return y;
 }
 
-const double Vec3::getz() {
+const double Vec3::getz() const {
     return z;
 }
 
-const double Vec3::get_radius(){
+const double Vec3::get_radius() const{
     double tmp = pow(x,2.0) + pow(y, 2.0) + pow(z, 2.0);
     return tmp;
 }
