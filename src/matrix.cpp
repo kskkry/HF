@@ -143,7 +143,7 @@ Matrix Matrix::inv(){
   vector<vector<double>> A(vec.size(), vector<double>(vec[0].size()*2,0));
   try{
     if(vec.size()!=vec[0].size())
-      throw "Invalid Matrix size. inv() can only be called by square Matrixtrix!";
+      throw "Invalid Matrix size. inv() can only be called by square Matrix!";
   }catch(const char* err){
     cout << "Error:" << err << "\n";
     exit(1);
