@@ -7,7 +7,7 @@
     - エラー
         - collect2: error: ld returned 1 exit status
 ```bash
-g++ main.cpp hf.cpp variables.cpp systemparam.cpp gto.cpp vec3.cpp matrix.cpp
+$ g++ main.cpp hf.cpp variables.cpp systemparam.cpp gto.cpp vec3.cpp matrix.cpp functions.cpp overlap.cpp cgf.cpp
 ```
 
 ### Ref
