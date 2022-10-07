@@ -32,3 +32,13 @@ class Matrix{
     Matrix inv(); //逆行列
     double det(); //行列式
 };
+
+typedef Matrix Hmx;
+typedef Matrix Tmx;
+typedef Matrix Vmx;
+typedef Matrix Smx;
+typedef Matrix Xmx;
+typedef Matrix Fmx;
+typedef Matrix Pmx;
+typedef Matrix Gmx;
+typedef Matrix Cmx;
