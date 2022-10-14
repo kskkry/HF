@@ -11,7 +11,6 @@ Vec3::Vec3(const double xx, const double yy, const double zz){
     x = xx;
     y = yy;
     z = zz;
-
 }
 const double Vec3::getx() const {
     return x;

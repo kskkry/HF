@@ -2,4 +2,5 @@
 *.in
 *.out
 *.txt
+*.gch
 *.vscode
