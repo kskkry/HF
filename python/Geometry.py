@@ -11,7 +11,7 @@ class Atom():
         self.z = z
     
 class Geometry():
-    def __init__(self, atom:Atom):
+    def __init__(self, atom_list:list):
         pass
 
 

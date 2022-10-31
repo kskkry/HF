@@ -16,6 +16,7 @@ def main():
         lines = f.readlines()
     basis_type,natoms,atom_list = input(lines)
     # 2. 基底
+    ## sto-3g
     hf = HartreeFock(basis_type,natoms,atom_list)
     pass
 
