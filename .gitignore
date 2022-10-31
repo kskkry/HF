@@ -4,3 +4,4 @@
 *.txt
 *.gch
 *.vscode
+__pycache__
