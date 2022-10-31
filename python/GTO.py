@@ -1,4 +1,6 @@
 import numpy as np
+from config import Config
+cf = Config()
 
 class GTO(object):
     def __init__(self, alpha, coeff) -> None:
