@@ -1,6 +1,6 @@
-from Geometry import Atom
+from geometry import Atom
 
-def input(lines):
+def read_input(lines):
     natoms = -1
     basis = None
     atom_list = []

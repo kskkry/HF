@@ -1,6 +1,6 @@
 import sys
 import numpy as np
-from Input import input
+from input import read_input
 from HF import HartreeFock
 
 '''
@@ -14,7 +14,7 @@ def main():
     # 1. 入力
     with open(args[1]) as f:
         lines = f.readlines()
-    basis_type,natoms,atom_list = input(lines)
+    basis_type,natoms,atom_list = read_input(lines)
     # 2. 基底
     ## sto-3g
     hf = HartreeFock(basis_type,natoms,atom_list)
