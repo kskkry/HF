@@ -6,6 +6,9 @@ class HartreeFock(object):
         self.natoms = natoms
         self.atom_list = atom_list
         pass
+
+    def run(self,debug=True):
+        pass
         
 
 

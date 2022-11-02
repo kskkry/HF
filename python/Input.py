@@ -13,6 +13,6 @@ def read_input(lines):
             element,x,y,z = line.split()[0], float(line.split()[1]), float(line.split()[2]), float(line.split()[3])
             atom = Atom(element,x,y,z)
             atom_list.append(atom)
-    return basis,natoms,atom_list
+    return basis, natoms, atom_list
 
 
