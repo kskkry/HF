@@ -1,6 +1,7 @@
 import numpy as np
 from config import Config
-from Geometry import Vec, Atom
+from geometry import Vec, Atom
+from functions import factorial, factorial2
 cfg = Config()
 
 class GTO(object):

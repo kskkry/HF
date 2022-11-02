@@ -34,7 +34,7 @@ def compute_cgf_overlap(cgf1: CGF, cgf2: CGF):
         for j in range(cgf2_size):
             norm1 = cgf1.gtos[i].norm
             norm2 = cgf2.gtos[j].norm
-            sum_val += cgf1.gtos[i].coef * cgf2.gtos[j].coef * norm1 * norm2 * gto_overlap(cgf1.gtos[i], cgf2.gtos[j])
+            sum_val += cgf1.gtos[i].coef * cgf2.gtos[j].coef * norm1 * norm2 * compute_gto_overlap(cgf1.gtos[i], cgf2.gtos[j])
     return sum_val
     
     
