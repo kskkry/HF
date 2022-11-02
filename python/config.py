@@ -9,3 +9,6 @@ class Config(object):
             'Cl':17, 'Ar':18, 'K':19, 'Ca':20
         }
         self.iter = 100
+        
+    def getPI(self):
+        return self.PI
