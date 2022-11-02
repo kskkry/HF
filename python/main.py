@@ -1,7 +1,7 @@
 import sys
 import numpy as np
-from input import read_input
-from HF import HartreeFock
+from Input import read_input
+from hf import HF
 
 '''
 args[0]: xxx.py
@@ -17,7 +17,7 @@ def main():
     basis_type,natoms,atom_list = read_input(lines)
     # 2. 基底
     ## sto-3g
-    hf = HartreeFock(basis_type,natoms,atom_list)
+    hf = HF(basis_type,natoms,atom_list)
     pass
 
 
