@@ -36,5 +36,15 @@ def compute_cgf_overlap(cgf1: CGF, cgf2: CGF):
             norm2 = cgf2.gtos[j].norm
             sum_val += cgf1.gtos[i].coef * cgf2.gtos[j].coef * norm1 * norm2 * compute_gto_overlap(cgf1.gtos[i], cgf2.gtos[j])
     return sum_val
+
+def get_overlap_mx(cgf_list1: list, cgf_list2: list):
+    print(cgf_list1)
+    assert len(cgf_list1) == len(cgf_list2)
+    size = len(cgf_list1)
+    overlap_mx = np.zeros((size, size))
+    for id1 in range(size):
+        for id2 in range(size):
+            overlap_mx[id1, id2] = compute_cgf_overlap(cgf_list1[id1], cgf_list2[id2])
+    return overlap_mx
     
     
