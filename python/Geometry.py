@@ -22,7 +22,7 @@ class Vec(object):
 class Atom(Vec):
     def __init__(self,str_element,x,y,z) -> None:
         super().__init__(x,y,z)
-        self.element = cfg.dict_element_num_to_str[str_element]
+        self.element = cfg.get_element_num()[str_element]
         #print(self.element,self.x,self.y,self.z)
 
     

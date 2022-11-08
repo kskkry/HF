@@ -9,32 +9,24 @@ class ReadBasis(object):
     def __init__(self, basis_type) -> None:
         self.basis_type = basis_type
         lines = None
+        basis_list = ["sto-3g", "sto-6g", "6-31g"]
+        json_load = None
         # read basisset
-        if self.basis_type == "sto-3g":
-            print(self.basis_type)
-            with open(f"./python/basisset/{self.basis_type}.in") as f:
-                lines = f.readlines()
-        elif self.basis_type == "sto-6g":
-            with open(f"./python/basisset/{self.basis_type}.in") as f:
-                lines = f.readlines()
+        if self.basis_type in basis_list:
+            json_open = open(f"./python/basisset/{self.basis_type}.json", 'r')
+            json_load = json.load(json_open) # type: dict
+            
                 
         # 基底関数の入力が正しければ、具体的な値を ./basisset/*.in から取り出す
-        if lines is None:
-            pass
+        if json_load is not None:
+            self.get_basis_value(json_load)
         else:
-            self.get_basis_value(lines)
+            pass 
             
-    def get_basis_value(self, lines):
-        '''
-        具体的な基底関数の値の取り出し（alpha, coefficient, angular moment）
-        '''
-        for line in lines:
-            if str(line[0]).replace(" ", "").replace("\n", "") == "!" or str(line).replace(" ", "") == "\n":
-                continue
-            elif str(line[:4] == "****"):
-                continue
-            else:
-                print(line.replace("\n", ""))
+    def get_basis_value(self, json_load):
+        # 具体的な基底関数の値の取り出し（alpha, coefficient, angular moment）
+        elements = json_load["elements"]
+        print(type(elements))
         
 
 class GTO(object):
