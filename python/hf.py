@@ -14,7 +14,6 @@ class HF(ReadBasis):
         self.basis = self.get_basis()
         self.raw_overlap_mx = self.get_cgf_mx()
         self.overlap_eig_val, self.overlap_eig_vec = compute_diag(self.raw_overlap_mx)
-        print(self.overlap_eig_vec)
 
     def get_cgf_mx(self):
         return get_overlap_mx(self.basis, self.basis, debug=self.debug)
