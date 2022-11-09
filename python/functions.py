@@ -43,4 +43,4 @@ def compute_diag(mx: np.array):
     eig = np.linalg.eig(mx)
     eig_val = np.diag(eig[0])
     eig_vec = eig[1]
-    return 
+    return  eig_val, eig_vec
