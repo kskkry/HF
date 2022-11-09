@@ -16,6 +16,8 @@ class HF(ReadBasis):
         self.raw_overlap_mx = get_overlap_mx(self.basis, self.basis, debug=self.debug)
         self.raw_kinetics_mx = get_kinetics_mx(self.basis, self.basis, debug=self.debug)
         self.overlap_eig_val, self.overlap_eig_vec = compute_diag(self.raw_overlap_mx)
+        print(self.overlap_eig_val)
+        
 
     def run(self,debug=True):
         pass
