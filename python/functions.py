@@ -1,3 +1,4 @@
+import math
 import numpy as np
 from geometry import Atom, Vec
 
@@ -35,6 +36,6 @@ def compute_binomial_prefactor(s: int, ia: int, ib: int, xpa: float, xpb: float)
   sum_val=0.0
   for t in range(s+1):
     if ((s-ia) <= t) and (t <= ib):
-      sum_val += compute_binomial(ia,s-t)*compute_binomial(ib,t)*np.pow(xpa,ia-s+t)*np.pow(xpb,ib-t)
+      sum_val += compute_binomial(ia,s-t)*compute_binomial(ib,t)*math.pow(xpa,ia-s+t)*math.pow(xpb,ib-t)
   return sum_val
 

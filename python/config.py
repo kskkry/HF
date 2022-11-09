@@ -17,11 +17,11 @@ class Config(object):
             17:'Cl', 18:'Ar', 19:'K', 20:'Ca'
         }
         
-    def get_element_num(self):
+    def get_element_num(self) -> dict:
         return self._dict_element_str2num
     
-    def get_element_str(self):
+    def get_element_str(self) -> dict:
         return self._dict_element_num2str
     
-    def getPI(self):
+    def getPI(self) -> float:
         return self._PI

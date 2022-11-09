@@ -87,9 +87,9 @@ class ReadBasis(object):
         
 
 class GTO(object):
-    def __init__(self, alpha:float, coef: float, l: int, m: int, n: int, atom: Atom) -> None:
+    def __init__(self, alpha:float, coeff: float, l: int, m: int, n: int, atom: Atom) -> None:
         self.alpha = alpha
-        self.coeff = coef
+        self.coeff = coeff
         self.atom = atom
         self.x = atom.getx()
         self.y = atom.gety()
