@@ -40,6 +40,7 @@ def compute_binomial_prefactor(s: int, ia: int, ib: int, xpa: float, xpb: float)
   return sum_val
 
 def compute_diag(mx: np.array):
+    assert mx.shape[0] == mx.shape[1]
     eig = np.linalg.eig(mx)
     eig_val = np.diag(eig[0])
     eig_vec = eig[1]

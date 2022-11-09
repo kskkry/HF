@@ -19,7 +19,7 @@ def main():
     basis_type,natoms,atom_list = read_input(input_lines)
     
     # 2. 基底関数の取出し
-    hf = HF(basis_type, natoms, atom_list)
+    hf = HF(basis_type, natoms, atom_list, debug=True)
     #rb = ReadBasis(basis_type, atom_list)
     #mol_cgf_list = list(rb.get_mol_cgf_list)
 

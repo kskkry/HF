@@ -23,12 +23,12 @@ class ReadBasis(object):
         # 基底関数の入力が正しければ、具体的な値を ./python/basisset/*.json から取り出す
         if json_load is not None:
             self.basis4compute_dict = self.get_basis_value(json_load, self.atom_int_list)
-            self._mol_cgf_list = self.get_concat_basis_vector(self.atom_list)
+            self._basis = self.get_concat_basis_vector(self.atom_list)
         else:
             pass
 
-    def get_mol_cgf_list(self) -> list:
-        return list(self._mol_cgf_list)
+    def get_basis(self):
+        return self._basis
             
     def get_basis_value(self, json_load: dict, atom_int_list: list) -> dict:
         # 具体的な基底関数の値の取り出し（alpha, coefficient, angular moment）
@@ -71,10 +71,9 @@ class ReadBasis(object):
                 if len(gto_pz_list) > 0:
                     cgf_pz = CGF(gto_pz_list)
                     cgf_list.append(cgf_pz)
-        #print(basis_atom_list)
         return cgf_list
 
-    def get_concat_basis_vector(self, atom_list: list) -> list:
+    def get_concat_basis_vector(self, atom_list: list):
         # atom_list: list of Atom Object
         mol_cgf_list = []
         for atom in atom_list:
@@ -82,8 +81,8 @@ class ReadBasis(object):
             mol_cgf_list.extend(cgf_list)
         #for cgf in mol_cgf_list:
         #    print(cgf.gtos[0].atom.element)
-        print(type(mol_cgf_list))
-        return mol_cgf_list
+        basis = Basis(mol_cgf_list)
+        return basis
         
 
 class GTO(object):
@@ -115,5 +114,11 @@ class CGF(object):
     def getsize(self) -> int:
         return len(self.gtos)
 
+class Basis(object):
+    def __init__(self, CGF_list: list) -> None:
+        self.cgfs = CGF_list
+    
+    def getsize(self) -> int:
+        return len(self.cgfs)
 
 

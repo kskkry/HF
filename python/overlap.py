@@ -1,6 +1,6 @@
 import math
 import numpy as np
-from basis import GTO, CGF
+from basis import GTO, CGF, Basis
 from geometry import Atom, Vec
 from config import Config
 from functions import compute_dist2, compute_gaussian_product_center, compute_binomial_prefactor, factorial, factorial2
@@ -37,14 +37,26 @@ def compute_cgf_overlap(cgf1: CGF, cgf2: CGF):
             sum_val += cgf1.gtos[i].coeff * cgf2.gtos[j].coeff * norm1 * norm2 * compute_gto_overlap(cgf1.gtos[i], cgf2.gtos[j])
     return sum_val
 
-def get_overlap_mx(cgf_list1: list, cgf_list2: list):
-    print(cgf_list1)
-    assert len(cgf_list1) == len(cgf_list2)
-    size = len(cgf_list1)
+def get_overlap_mx(basis1: Basis, basis2: Basis, debug=False):
+    assert basis1.getsize() == basis2.getsize()
+    size = basis1.getsize()
     overlap_mx = np.zeros((size, size))
     for id1 in range(size):
         for id2 in range(size):
-            overlap_mx[id1, id2] = compute_cgf_overlap(cgf_list1[id1], cgf_list2[id2])
+            overlap_mx[id1, id2] = compute_cgf_overlap(basis1.cgfs[id1], basis1.cgfs[id2])
+            
+    if debug:
+        '''
+        print as matrix format
+        '''
+        print("===== overlap matrix ==========================================================================================================================")
+        for id1 in range(size):
+            for id2 in range(size):
+                if id2 == size-1:
+                    print(f"{overlap_mx[id1, id2]:.5e}")
+                else:
+                    print(f"{overlap_mx[id1, id2]:.5e}", end=',  ')
+        print("===============================================================================================================================================")
     return overlap_mx
     
     

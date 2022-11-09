@@ -12,4 +12,13 @@ def compute_gto_kinetics(gto1: GTO, gto2: GTO):
     Ref : P29, Nakai
     '''
 
+def compute_cgf_kinetics(cgf1: CGF, cgf2: CGF):
+    '''
+    '''
+    pass
+
+def get_kinetics_mx(cgf1: CGF, cgf2: CGF):
+    '''
+    '''
+    pass
 
