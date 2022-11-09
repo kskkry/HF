@@ -46,7 +46,8 @@ def get_overlap_mx(basis1: Basis, basis2: Basis, debug=False):
     for id1 in range(size):
         for id2 in range(size):
             overlap_mx[id1, id2] = compute_cgf_overlap(basis1.cgfs[id1], basis1.cgfs[id2])
-            
+
+    #===========================================================================================================================================================
     if debug:
         '''
         print as matrix format
@@ -59,6 +60,8 @@ def get_overlap_mx(basis1: Basis, basis2: Basis, debug=False):
                 else:
                     print(f"{overlap_mx[id1, id2]:.5e}", end=',  ')
         print("===============================================================================================================================================")
+    #===========================================================================================================================================================
+        
     return overlap_mx
     
     
