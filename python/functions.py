@@ -39,3 +39,8 @@ def compute_binomial_prefactor(s: int, ia: int, ib: int, xpa: float, xpb: float)
       sum_val += compute_binomial(ia,s-t)*compute_binomial(ib,t)*math.pow(xpa,ia-s+t)*math.pow(xpb,ib-t)
   return sum_val
 
+def compute_diag(mx: np.array):
+    eig = np.linalg.eig(mx)
+    eig_val = np.diag(eig[0])
+    eig_vec = eig[1]
+    return 
