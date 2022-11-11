@@ -26,5 +26,6 @@ class Config(object):
     
     def getPI(self) -> float:
         return self._PI
+    
     def getEPS(self) -> float:
         return self._EPS

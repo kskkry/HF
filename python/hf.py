@@ -19,7 +19,7 @@ class HF(ReadBasis):
         self.raw_nuclear_mx = get_nuclear_mx(self.basis, self.basis, self.atom_list, debug=self.debug)
         self.raw_hamiltonian_mx = self.raw_kinetics_mx + self.raw_nuclear_mx
         self.overlap_eig_val, self.overlap_eig_vec = compute_diag(self.raw_overlap_mx)
-        #print(self.overlap_eig_val)
+        print(self.overlap_eig_val)
         
 
     def run(self,debug=True):

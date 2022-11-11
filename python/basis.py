@@ -86,8 +86,6 @@ class ReadBasis(object):
         for atom in atom_list:
             cgf_list = self.get_atom_basis_vector(atom)
             mol_cgf_list.extend(cgf_list)
-        #for cgf in mol_cgf_list:
-        #    print(cgf.gtos[0].atom.element)
         basis = Basis(mol_cgf_list)
         return basis
         

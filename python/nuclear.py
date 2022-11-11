@@ -23,17 +23,17 @@ def compute_nuclear(atom1: Atom, norm1: float, l1: int, m1: int, n1: int, alpha1
     # virtual atom that shows internal division point
     atom_empty = Atom('X', p_vec.getx(), p_vec.gety(), p_vec.getz())
     Rab2 = compute_dist2(atom1, atom2)
-    Rcp2 = compute_dist2(atom_empty, atom3)
-    arr_x = get_A_array(l1, l2, atom1.getx()-atom_empty.getx(), atom2.getx()-atom_empty.getx(), atom3.getx()-atom_empty.getx(), gamma)
-    arr_y = get_A_array(m1, m2, atom1.gety()-atom_empty.gety(), atom2.gety()-atom_empty.gety(), atom3.gety()-atom_empty.gety(), gamma)
-    arr_z = get_A_array(n1, n2, atom1.getz()-atom_empty.getz(), atom2.getz()-atom_empty.getz(), atom3.getz()-atom_empty.getz(), gamma)
+    Rcp2 = compute_dist2(atom3, atom_empty)
+    arr_x = get_A_array(l1, l2, atom_empty.getx()-atom1.getx(), atom_empty.getx()-atom2.getx(), atom_empty.getx()-atom3.getx(), gamma)
+    arr_y = get_A_array(m1, m2, atom_empty.gety()-atom1.gety(), atom_empty.gety()-atom2.gety(), atom_empty.gety()-atom3.gety(), gamma)
+    arr_z = get_A_array(n1, n2, atom_empty.getz()-atom1.getz(), atom_empty.getz()-atom2.getz(), atom_empty.getz()-atom3.getz(), gamma)
     sum_val = 0.0
     for i in range(l1+l2+1):
         for j in range(m1+m2+1):
             for k in range(n1+n2+1):
                 sum_val += arr_x[i] * arr_y[j] * arr_z[k] * Fgamma(i+j+k, Rcp2*gamma)
     
-    return -norm1 * norm2 * 2.0 * cfg.getPI() * np.exp(-alpha1*alpha2*Rab2 / gamma) * sum_val
+    return -norm1 * norm2 * 2.0 * cfg.getPI() / gamma * np.exp(-alpha1*alpha2*Rab2 / gamma) * sum_val
 
 def compute_gto_nuclear(gto1: GTO, gto2: GTO, atom: Atom):
     '''
@@ -49,11 +49,8 @@ def compute_cgf_nuclear(cgf1: CGF, cgf2: CGF, atom: Atom):
         for gto2 in cgf2.gtos:
             norm1 = gto1.norm
             norm2 = gto2.norm
-            #if gto1.atom == atom or gto2.atom == atom or gto1.atom == gto2.atom:
-            #    continue
-            sum_val += gto1.coeff * gto2.coeff * norm1 * norm2 * compute_gto_nuclear(gto1, gto2, atom)
-    #print("sum_val5=", sum_val)
-    return -float(atom.element) * sum_val
+            sum_val += gto1.coeff * gto2.coeff * compute_gto_nuclear(gto1, gto2, atom)
+    return float(atom.element) * sum_val
 
 def get_nuclear_mx(basis1: Basis, basis2: Basis, atom_list: list, debug=False) -> np.array:
     '''
@@ -86,8 +83,21 @@ def get_A_array(l1: int, l2: int, pos1: float, pos2: float, pos3: float, gamma: 
     A_arr = [0.0 for i in range(imax)]
     for i in range(imax):
         rmax = i/2
-        for r in range(i // 2 + 1):
-            for u in range((i-2*r) // 2 + 1):
+        if i == 0:
+            rmax = 1
+        elif i % 2 == 0:
+            rmax = i // 2
+        else:
+            rmax = i // 2 + 1
+        for r in range(rmax):
+            umax = 0
+            if (i-2*r) == 0:
+                umax = 1
+            elif (i-2*r) % 2 == 0:
+                umax = (i-2*r) // 2
+            else:
+                umax = (i-2*r) // 2 + 1
+            for u in range(umax):
                 iI = i - 2*r - u
                 A_arr[iI] += compute_A_term(i, r, u, l1, l2, pos1, pos2, pos3, gamma)
     return A_arr
