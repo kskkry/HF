@@ -6,7 +6,7 @@ def read_input(lines):
     atom_list = []
     for index, line in enumerate(lines):
         if index == 0:
-            basis = str(line).lower()
+            basis = str(line).lower().replace("\n", "").replace(" ", "")
         elif index == 1:
             natoms = int(line)
         else:

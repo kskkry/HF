@@ -1,5 +1,5 @@
-# python-ver
+# python-ver-Hartree-Fock
 ```python
-# execution command
+# How to Run
 $python ./python/main.py ./inputs/XXX.in
 ```
