@@ -38,7 +38,7 @@ def compute_cgf_overlap(cgf1: CGF, cgf2: CGF):
             sum_val += cgf1.gtos[i].coeff * cgf2.gtos[j].coeff * norm1 * norm2 * compute_gto_overlap(cgf1.gtos[i], cgf2.gtos[j])
     return sum_val
 
-def get_overlap_mx(basis1: Basis, basis2: Basis, debug=False):
+def get_overlap_mx(basis1: Basis, basis2: Basis, debug=False) -> np.array:
     assert basis1.getsize() == basis2.getsize()
     size = basis1.getsize()
     overlap_mx = np.zeros((size, size))
