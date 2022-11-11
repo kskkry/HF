@@ -1,3 +1,4 @@
+import sys
 import json
 import math
 import numpy as np
@@ -25,7 +26,13 @@ class ReadBasis(object):
             self.basis4compute_dict = self.get_basis_value(json_load, self.atom_int_list)
             self._basis = self.get_concat_basis_vector(self.atom_list)
         else:
-            pass
+            print("Input Following Basis Function that is Supported")
+            print()
+            print("=====Basis Function Option==================================================")
+            for bas in basis_list:
+                print(f" - {bas}")
+            print("============================================================================")
+            sys.exit()
 
     def get_basis(self):
         return self._basis

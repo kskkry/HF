@@ -15,7 +15,6 @@ def compute_overlap_1D(l1: int, l2: int, x1: float, x2: float, gamma: float):
 def compute_overlap(alpha1:float, l1:int,m1:int, n1:int, atom1: Atom, alpha2: float, l2: int, m2: int, n2: int, atom2: Atom) -> float:
     dist2 = compute_dist2(atom1, atom2)
     gamma = alpha1 + alpha2
-    
     # pos: Vec Object
     pos = compute_gaussian_product_center(alpha1, atom1, alpha2, atom2)
     pre = math.pow(cfg.getPI() / gamma, 1.5) * np.exp(-alpha1 * alpha2 * dist2 / gamma)
@@ -46,7 +45,6 @@ def get_overlap_mx(basis1: Basis, basis2: Basis, debug=False):
     for id1 in range(size):
         for id2 in range(size):
             overlap_mx[id1, id2] = compute_cgf_overlap(basis1.cgfs[id1], basis1.cgfs[id2])
-
     #===========================================================================================================================================================
     if debug:
         '''
@@ -61,7 +59,6 @@ def get_overlap_mx(basis1: Basis, basis2: Basis, debug=False):
                     print(f"{overlap_mx[id1, id2]:.5e}", end=',  ')
         print("===============================================================================================================================================\n")
     #===========================================================================================================================================================
-        
     return overlap_mx
     
     
