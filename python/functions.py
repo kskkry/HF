@@ -66,5 +66,7 @@ def Fgamma(a: float, x: float):
         val = 0.5 / x**(a + 0.5) * gamma(a + 0.5) * gammainc(a + 0.5, x)
     return val
         
-        
-    
+def pair_index(i: int, j: int) -> int:
+    ii = max(i,j)
+    jj = min(i,j)
+    return ii*(ii+1) // 2 - (ii - jj)

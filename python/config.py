@@ -5,7 +5,7 @@ class Config(object):
         self._PI = math.acos(0)*2.0
         self._EPS = 1e-8
         self.iter = 100
-        self.basis_list = ["sto-3g", "sto-6g", "6-31g"]
+        self.basis_list = ["sto-3g", "sto-6g", "3-21g", "6-31g", "6-311g", "6-311+g"]
 
         self._dict_element_str2num = {
             'X':0, 'H':1, 'He':2, 'Li':3, 'Be':4, 'B':5, 'C':6, 'N':7, 'O':8,
