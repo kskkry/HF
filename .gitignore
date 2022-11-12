@@ -1,6 +1,5 @@
 *.exe
 *.in
-*.json
 *.out
 *.txt
 *.gch
