@@ -13,17 +13,15 @@ args = sys.argv
 
 
 def main():
-    # 1. 入力
+    # 1. read input
     with open(args[1]) as f:
         input_lines = f.readlines()
     basis_type,natoms,atom_list = read_input(input_lines)
     
-    # 2. 基底関数の取出し
+    # 2. prepare for computation
     hf = HF(basis_type, natoms, atom_list, debug=True)
-    #rb = ReadBasis(basis_type, atom_list)
-    #mol_cgf_list = list(rb.get_mol_cgf_list)
 
-    # 3. HF-Roothaan法の実行
+    # 3. run HF-Roothaan-method
     hf.run()
 
 

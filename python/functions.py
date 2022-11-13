@@ -70,3 +70,38 @@ def pair_index(i: int, j: int) -> int:
     ii = max(i,j)
     jj = min(i,j)
     return ii*(ii+1) // 2 - (ii - jj)
+
+def get_canonical_othogonal(S: np.array, debug=False) -> np.array:
+    size = S.shape[0]
+    # eig_val: eigenvalue, U: eigen_vector
+
+    eig_val, U = compute_diag(S)
+
+    if debug:
+        print("------------u--------------")
+        print(U.shape)
+        print(U)
+        print("------------v--------------")
+        print(eig_val.shape)
+        print(eig_val)
+
+    s = np.zeros((size, size))
+    for i in range(size):
+        s[i,i] = 1 / np.sqrt(eig_val[i,i])
+    return U*s
+
+def get_inv_mx(mx: np.array) -> np.array:
+    return np.linalg.inv(mx)
+
+def compute_nuclear_repulsion(atom_list: list) -> float:
+    sum_val = 0.0
+    for atom1 in range(atom_list):
+        for atom2 in range(atom_list):
+            if atom1 == atom2:
+                continue
+            sum_val += -float(atom1.element) * float(atom2.element) / compute_dist(atom1, atom2)
+    return sum_val
+
+
+
+
