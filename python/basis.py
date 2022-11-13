@@ -13,7 +13,7 @@ class ReadBasis(object):
         self.atom_list = atom_list    # list of Atom class
         self.atom_int_list = [atom.element for atom in self.atom_list] # list of element-integer
         
-        basis_list = ["sto-3g", "sto-6g", "6-31g"]
+        basis_list = cfg.basis_list
         json_load = None
 
         # Read Basisset

@@ -1,0 +1,1268 @@
+{
+    "molssi_bse_schema": {
+        "schema_type": "complete",
+        "schema_version": "0.1"
+    },
+    "revision_description": "Data from Gaussian09",
+    "revision_date": "2018-06-19",
+    "elements": {
+        "1": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.1309756377E+01",
+                        "0.2331359749E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1969a"
+                    ]
+                }
+            ]
+        },
+        "2": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.2432879285E+01",
+                        "0.4330512863E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1969a",
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "3": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.6163845031E+01",
+                        "0.1097161308E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.2459163220E+00",
+                        "0.6237087296E-01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1969a",
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "4": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.1153566907E+02",
+                        "0.2053343279E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.5081630247E+00",
+                        "0.1288835617E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1969a",
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "5": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.1865687310E+02",
+                        "0.3320914006E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.8645495695E+00",
+                        "0.2192726003E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1969a",
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "6": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.2738503303E+02",
+                        "0.4874522075E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.1136748198E+01",
+                        "0.2883093603E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1969a"
+                    ]
+                }
+            ]
+        },
+        "7": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.3789647534E+02",
+                        "0.6745553507E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.1461088772E+01",
+                        "0.3705706944E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1969a"
+                    ]
+                }
+            ]
+        },
+        "8": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.4998097117E+02",
+                        "0.8896587673E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.1945236531E+01",
+                        "0.4933633506E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1969a"
+                    ]
+                }
+            ]
+        },
+        "9": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.6373520195E+02",
+                        "0.1134483382E+02"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.2498548256E+01",
+                        "0.6336978147E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1969a"
+                    ]
+                }
+            ]
+        },
+        "10": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.7915916767E+02",
+                        "0.1409029194E+02"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.3187075533E+01",
+                        "0.8083265136E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1969a",
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "11": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.9589101577E+02",
+                        "0.1706855247E+02"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.4653351603E+01",
+                        "0.1180212844E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.5940607959E+00",
+                        "0.2038163303E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "-0.2983986045E+00",
+                            "0.1227982887E+01"
+                        ],
+                        [
+                            "0.3480471912E+00",
+                            "0.7222523221E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "12": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.1144231826E+03",
+                        "0.2036726882E+02"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.5844355090E+01",
+                        "0.1482282778E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.5605994123E+00",
+                        "0.1923360636E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "-0.2983986045E+00",
+                            "0.1227982887E+01"
+                        ],
+                        [
+                            "0.3480471912E+00",
+                            "0.7222523221E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "13": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.1343774607E+03",
+                        "0.2391912027E+02"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.7304329554E+01",
+                        "0.1852570854E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.5605994123E+00",
+                        "0.1923360636E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "-0.2983986045E+00",
+                            "0.1227982887E+01"
+                        ],
+                        [
+                            "0.3480471912E+00",
+                            "0.7222523221E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "14": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.1559346912E+03",
+                        "0.2775629642E+02"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.8963995756E+01",
+                        "0.2273506028E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.5940607959E+00",
+                        "0.2038163303E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "-0.2983986045E+00",
+                            "0.1227982887E+01"
+                        ],
+                        [
+                            "0.3480471912E+00",
+                            "0.7222523221E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "15": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.1790948740E+03",
+                        "0.3187879729E+02"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.1083418938E+02",
+                        "0.2747836517E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.7002643178E+00",
+                        "0.2402536988E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "-0.2983986045E+00",
+                            "0.1227982887E+01"
+                        ],
+                        [
+                            "0.3480471912E+00",
+                            "0.7222523221E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "16": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.2038580092E+03",
+                        "0.3628662287E+02"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.1288144277E+02",
+                        "0.3267074035E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.8151968963E+00",
+                        "0.2796859194E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "-0.2983986045E+00",
+                            "0.1227982887E+01"
+                        ],
+                        [
+                            "0.3480471912E+00",
+                            "0.7222523221E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "17": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.2299441039E+03",
+                        "0.4092993459E+02"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.1505761009E+02",
+                        "0.3819007533E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.8554475461E+00",
+                        "0.2934955157E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "-0.2983986045E+00",
+                            "0.1227982887E+01"
+                        ],
+                        [
+                            "0.3480471912E+00",
+                            "0.7222523221E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "18": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.2578966186E+03",
+                        "0.4590546810E+02"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.1745529423E+02",
+                        "0.4427123544E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.1053092785E+01",
+                        "0.3613056247E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "-0.2983986045E+00",
+                            "0.1227982887E+01"
+                        ],
+                        [
+                            "0.3480471912E+00",
+                            "0.7222523221E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "hehre1970a"
+                    ]
+                }
+            ]
+        },
+        "19": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.2950121465E+03",
+                        "0.5251201337E+02"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.2025259239E+02",
+                        "0.5136592224E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.1466966455E+01",
+                        "0.5033015504E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "-0.2983986045E+00",
+                            "0.1227982887E+01"
+                        ],
+                        [
+                            "0.3480471912E+00",
+                            "0.7222523221E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.2540481415E+00",
+                        "0.1022398201E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "-0.6615603018E+00",
+                            "0.1510754134E+01"
+                        ],
+                        [
+                            "0.1309890515E+00",
+                            "0.8946431268E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "pietro1980a"
+                    ]
+                }
+            ]
+        },
+        "20": {
+            "electron_shells": [
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0
+                    ],
+                    "exponents": [
+                        "0.3265671727E+03",
+                        "0.5812879211E+02"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4301284983E+00",
+                            "0.6789135305E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.2301915102E+02",
+                        "0.5838264545E+01"
+                    ],
+                    "coefficients": [
+                        [
+                            "0.4947176920E-01",
+                            "0.9637824081E+00"
+                        ],
+                        [
+                            "0.5115407076E+00",
+                            "0.6128198961E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.1757469459E+01",
+                        "0.6029702317E+00"
+                    ],
+                    "coefficients": [
+                        [
+                            "-0.2983986045E+00",
+                            "0.1227982887E+01"
+                        ],
+                        [
+                            "0.3480471912E+00",
+                            "0.7222523221E+00"
+                        ]
+                    ]
+                },
+                {
+                    "function_type": "gto",
+                    "region": "",
+                    "angular_momentum": [
+                        0,
+                        1
+                    ],
+                    "exponents": [
+                        "0.2297850469E+00",
+                        "0.9247531480E-01"
+                    ],
+                    "coefficients": [
+                        [
+                            "-0.6615603018E+00",
+                            "0.1510754134E+01"
+                        ],
+                        [
+                            "0.1309890515E+00",
+                            "0.8946431268E+00"
+                        ]
+                    ]
+                }
+            ],
+            "references": [
+                {
+                    "reference_description": "STO-2G Minimal Basis (2 functions/AO)",
+                    "reference_keys": [
+                        "pietro1980a"
+                    ]
+                }
+            ]
+        }
+    },
+    "version": "1",
+    "function_types": [
+        "gto"
+    ],
+    "names": [
+        "STO-2G"
+    ],
+    "tags": [],
+    "family": "sto",
+    "description": "STO-2G Minimal Basis (2 functions/AO)",
+    "role": "orbital",
+    "auxiliaries": {},
+    "name": "STO-2G"
+}

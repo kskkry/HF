@@ -66,5 +66,47 @@ def Fgamma(a: float, x: float):
         val = 0.5 / x**(a + 0.5) * gamma(a + 0.5) * gammainc(a + 0.5, x)
     return val
         
-        
-    
+def pair_index(i: int, j: int) -> int:
+    ii = max(i,j)
+    jj = min(i,j)
+    return ii*(ii+1) // 2 - (ii - jj)
+
+def get_canonical_othogonal(S: np.array, debug=False) -> np.array:
+    size = S.shape[0]
+    # eig_val: eigenvalue, U: eigen_vector
+
+    eig_val, U = compute_diag(S)
+
+    if debug:
+        print("===========================================================================")
+        print("\n------------unitaly matrix--------------")
+        print(U.shape)
+        print(U)
+        print("------------eigenvalue matrix------------------\n")
+        print(eig_val.shape)
+        print([eig_val[i,i] for i in range(eig_val.shape[0])])
+        print("===========================================================================")
+
+    s = np.zeros((size, size))
+    for i in range(size):
+        s[i,i] = 1 / np.sqrt(eig_val[i,i])
+    return U*s
+
+def get_inv_mx(mx: np.array) -> np.array:
+    return np.linalg.inv(mx)
+
+def compute_nuclear_repulsion(atom_list: list, debug=False) -> float:
+    sum_val = 0.0
+    for id1, atom1 in enumerate(atom_list):
+        for id2, atom2 in enumerate(atom_list):
+            if id1 < id2:
+                sum_val += -float(atom1.element) * float(atom2.element) / compute_dist(atom1, atom2)
+    if debug:
+        print("\n===========================================================================")
+        print(f"Nuclear Repulsion Value= {sum_val}")
+        print("===========================================================================\n")
+    return sum_val
+
+
+
+
