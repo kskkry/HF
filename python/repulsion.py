@@ -62,7 +62,6 @@ def get_repulsion_list(basis: Basis, atom_list: list, debug=False) -> np.array:
     '''
     '''
     size = basis.getsize()
-    cnt = 0
     TE = [0.0 for i in range(get_repulsion_index(size,size,size,size))]
     for i in range(size):
         for j in range(i+1):
@@ -72,7 +71,6 @@ def get_repulsion_list(basis: Basis, atom_list: list, debug=False) -> np.array:
                     kl = pair_index(k,l)
                     if ij <= kl:
                         index = get_repulsion_index(i,j,k,l)
-                        cnt += 1
                         TE[index] = compute_cgf_repulsion(basis.cgfs[i], basis.cgfs[j], basis.cgfs[k], basis.cgfs[l])
     return TE
 

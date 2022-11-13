@@ -78,12 +78,14 @@ def get_canonical_othogonal(S: np.array, debug=False) -> np.array:
     eig_val, U = compute_diag(S)
 
     if debug:
-        print("------------u--------------")
+        print("===========================================================================")
+        print("\n------------unitaly matrix--------------")
         print(U.shape)
         print(U)
-        print("------------v--------------")
+        print("------------eigenvalue matrix------------------\n")
         print(eig_val.shape)
-        print(eig_val)
+        print([eig_val[i,i] for i in range(eig_val.shape[0])])
+        print("===========================================================================")
 
     s = np.zeros((size, size))
     for i in range(size):
@@ -93,13 +95,16 @@ def get_canonical_othogonal(S: np.array, debug=False) -> np.array:
 def get_inv_mx(mx: np.array) -> np.array:
     return np.linalg.inv(mx)
 
-def compute_nuclear_repulsion(atom_list: list) -> float:
+def compute_nuclear_repulsion(atom_list: list, debug=False) -> float:
     sum_val = 0.0
-    for atom1 in range(atom_list):
-        for atom2 in range(atom_list):
-            if atom1 == atom2:
-                continue
-            sum_val += -float(atom1.element) * float(atom2.element) / compute_dist(atom1, atom2)
+    for id1, atom1 in enumerate(atom_list):
+        for id2, atom2 in enumerate(atom_list):
+            if id1 < id2:
+                sum_val += -float(atom1.element) * float(atom2.element) / compute_dist(atom1, atom2)
+    if debug:
+        print("\n===========================================================================")
+        print(f"Nuclear Repulsion Value= {sum_val}")
+        print("===========================================================================\n")
     return sum_val
 
 

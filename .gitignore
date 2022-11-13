@@ -3,5 +3,8 @@
 *.out
 *.txt
 *.gch
+*.csv
 *.vscode
+test.*
+img/*
 __pycache__
