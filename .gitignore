@@ -4,7 +4,9 @@
 *.txt
 *.gch
 *.csv
+*.png
+*.jpg
+*.jpeg
 *.vscode
 test.*
-img/*
 __pycache__
